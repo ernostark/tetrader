@@ -1,0 +1,24 @@
+<h1>Tetraéder</h1>
+<p>Tetraéder térfogat számítás</p>
+
+<div class="tetraform">
+    <div class="form-group">
+        <label class="form-label" for="area">Terület</label>
+        <input type="text" class="form-control" id="area" placeholder="Terület (cm2)" required>
+    </div>
+
+    <div class="form-group">
+        <label class="form-label" for="area">Magasság</label>
+        <input type="text" class="form-control" id="area" placeholder="Magasság (cm)" required>
+    </div>
+
+    <div>
+        <button (click)="startCalc()" class="btn btn-primary my-2" id="calcButton">Számít</button>
+    </div>
+
+    <div class="input-group">
+        <span class="input-group-text">Térfogat</span>
+        <input type="text" class="form-control" id="volume" readonly>
+        <span class="input-group-text">cm3</span>
+    </div>
+</div>
