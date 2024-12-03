@@ -4,12 +4,12 @@
 <div class="tetraform">
     <div class="form-group">
         <label class="form-label" for="area">Terület</label>
-        <input type="text" class="form-control" id="area" placeholder="Terület (cm2)" required>
+        <input type="text" class="form-control" id="area" placeholder="Terület (cm2)" required [(ngModel)]="area">
     </div>
 
     <div class="form-group">
-        <label class="form-label" for="area">Magasság</label>
-        <input type="text" class="form-control" id="area" placeholder="Magasság (cm)" required>
+        <label class="form-label" for="height">Magasság</label>
+        <input type="text" class="form-control" id="height" placeholder="Magasság (cm)" required [(ngModel)]="height">
     </div>
 
     <div>
@@ -18,7 +18,7 @@
 
     <div class="input-group">
         <span class="input-group-text">Térfogat</span>
-        <input type="text" class="form-control" id="volume" readonly>
+        <input type="text" class="form-control" id="volume" readonly [(ngModel)]="volume">
         <span class="input-group-text">cm3</span>
     </div>
 </div>
